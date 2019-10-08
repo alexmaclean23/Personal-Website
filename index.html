@@ -1,0 +1,260 @@
+<!-- Alex Maclean -->
+<!-- Personal CV Site -->
+<!-- Created on 09/01/19; Updated on 10/06/19 -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <title>Alex Maclean</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Alex Maclean - Personal Website">
+  <meta name="keywords" content="Alex, Maclean, Alex Maclean, 23, alexmaclean23, CV, resume, personal, portfolio, custom">
+  <meta name="author" content="Alex Maclean">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Lato", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    .am23-wide {letter-spacing: 10px;}
+    .am23-hover-opacity {cursor: pointer;}
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+
+    .am23-wrapper {
+      min-width: 100%;
+    }
+  </style>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="am23-top">
+      <div class="am23-bar" id="myNavbar">
+        <a class="am23-bar-item am23-button am23-hover-black am23-hide-medium am23-hide-large am23-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="am23-bar-item am23-button"><i class="fa fa-home"></i> HOME</a>
+        <a href="#about" class="am23-bar-item am23-button am23-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#workexperience" class="am23-bar-item am23-button am23-hide-small"><i class="fa fa-briefcase"></i> WORK EXPERIENCE</a>
+        <a href="#contact" class="am23-bar-item am23-button am23-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="am23-bar-block am23-white am23-hide am23-hide-large am23-hide-medium">
+        <a href="#about" class="am23-bar-item am23-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#workexperience" class="am23-bar-item am23-button" onclick="toggleFunction()">WORK EXPERIENCE</a>
+        <a href="#contact" class="am23-bar-item am23-button" onclick="toggleFunction()">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="am23-display-container am23-opacity-min" id="home" style="min-height: 100%">
+      <div class="am23-display-middle" style="white-space:nowrap;">
+        <h1 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">ALEX MACLEAN</h1>
+        <hr>
+        <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">SOFTWARE ENGINEERING</p>
+        <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">WEB DEVELOPMENT</p>
+        <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">CYBERSECURITY</p>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="am23-wrapper" style="background-color: #f1f1f1">
+      <div class="am23-content am23-container am23-padding-64" id="about">
+        <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">ABOUT ME</h3>
+        <p>Welcome! My name is Alex Maclean, and I am a young computer science enthusiast who enjoys software engineering, web development, and offensive security.
+          As a college student, I am still broadening my horizons within the world of computer science, and hope to find my calling at a tech company where I can
+          practice my trade. Currently, I am honing my skills in my favorite language, Python, and am studying for a series of certifications in offensive security
+          over the next year. I have my sights set on tests like the Pentest+, the CEH, and the OSCP, but would like to continue with my Python projects at the same
+          time (as well as up-keeping this site!).
+        </p>
+        <div class="am23-row">
+          <div class="am23-col m6 am23-center am23-padding-large">
+            <a href="#contact"><img src="images/portrait.jpg" class="am23-round am23-hover-shadow am23-grayscale am23-image am23-hover-opacity am23-card-4" alt="Photo of Me" width="auto" height="50%" style="margin-top: 5%"></a>
+          </div>
+
+          <!-- Hide this text on small devices -->
+          <div class="am23-col m6 am23-hide-small am23-padding-large">
+            <p>Thanks for visiting my site. If you would like to reach out to me, for personal or professional purposes, pleace make your way to the bottom the page 
+              for a list of my social media profiles and contact information. I'll get back to you as soon as I can! Otherwise, feel free to check out the rest of my 
+              site below, visit my GitHub to see what I've been working on, or check out my résumé, posted below. With any feedback, or if you have a question regarding
+              any of this information, don't hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+        <p class="am23-large am23-center am23-padding-16">What my mom tells me I'm good at:</p>
+        <p class="am23-wide"><i class="fa fa-laptop"></i>Web Development</p>
+        <div class="am23-light-grey">
+          <div class="am23-container am23-padding-small am23-dark-grey am23-center" style="width:90%">90%</div>
+        </div>
+        <p class="am23-wide"><i class="fa fa-shield"></i>Offensive Security</p>
+        <div class="am23-light-grey">
+          <div class="am23-container am23-padding-small am23-dark-grey am23-center" style="width:85%">85%</div>
+        </div>
+        <p class="am23-wide"><i class="fa fa-file-code-o"></i>Software Engineering</p>
+        <div class="am23-light-grey">
+          <div class="am23-container am23-padding-small am23-dark-grey am23-center" style="width:75%">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="am23-row am23-center am23-dark-grey am23-padding-16">
+      <div class="am23-quarter am23-section">
+        <span class="am23-xlarge">4+</span><br>
+        Certifications<br>(Including Driver's License)
+      </div>
+      <div class="am23-quarter am23-section">
+        <span class="am23-xlarge">9+</span><br>
+        Languages<br>(Including English)
+      </div>
+      <div class="am23-quarter am23-section">
+        <span class="am23-xlarge">5+</span><br>
+        Years of Experience<br>(Including Grade 6 Tech Class)
+      </div>
+      <div class="am23-quarter am23-section">
+        <span class="am23-xlarge">2+</span><br>
+        Happy Clients<br>(Including Parents)
+      </div>
+    </div>
+
+    <!-- Container (Work Experience Section) -->
+    <div class="am23-content am23-container am23-padding-64" id="workexperience">
+      <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">WORK EXPERIENCE</h3><br>
+      <div class="am23-row-padding am23-center">
+        <div class="am23-third">
+          <div class="am23-card am23-container">
+          <h3>WYSA</h3>
+          <h5>Various Positions</h5>
+          <img src="images/soccer.png" width="25%" style="margin-top: 5%">
+          <p>Throughout my long and ongoing affiliation with the WYSA, I have worked as a 
+            referee, referee assignor, referee mentor (volunteer), IT specialist, and web 
+            designer. The WYSA is an organization that I have poured my heart and soul into, 
+            and the work is extremely rewarding.</p>
+            <h6 style="padding-bottom: 5%">Walpole, MA<br>SEPTEMBER 2014 - PRESENT</h6>
+          </div>
+        </div>
+        <div class="am23-third">
+          <div class="am23-card am23-container">
+          <h3>MITRE</h3>
+          <h5>Cyber Engineering Intern</h5>
+          <img src="images/plane.png" width="25%" style="margin-top: 5%">
+          <p>My first experience in the field of my choice occurred in the summer of 2019, 
+            where I got my first real-world feel for cybersecurity, software development, and 
+            a professional work environment. MITRE helped me to pinpoint exactly where I 
+            want to guide my career path going forward.</p>
+            <h6 style="padding-bottom: 5%">Bedford, MA<br>JUNE 2019 - PRESENT</h6>
+          </div>
+        </div>
+        <div class="am23-third">
+          <div class="am23-card am23-container">
+          <h3>WVGC</h3>
+          <h5>Bag Boy / Caddy</h5>
+          <img src="images/golf.png" width="25%" style="margin-top: 5%">
+          <p>My first job took place over 4 summers, part time, in which I became one with 
+            the small community of Waterville Valley, NH. The relationships that I established 
+            with the locals vastly out-valued the minimum wage that I was paid; an experience 
+            that opened my eyes to the real world.</p>
+            <h6 style="padding-bottom: 5%">Waterville Valley, NH<br>JUNE 2014 - AUGUST 2017</h6>
+          </div>
+        </div>
+        <a href="downloads/Alex Maclean - Resume.pdf" target="_blank" class="am23-button am23-light-gray am23-hover-gray am23-padding-large am23-large am23-wide am23-hover-shadow" style="margin-top: 7%"><i class="fa fa-download"></i> My Résumé</a>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="am23-wrapper" style="background-color: #f1f1f1">
+      <div class="am23-content am23-container am23-padding-64" id="contact">
+        <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">CONTACT ME</h3>
+        <div class="am23-row-padding am23-padding-16 am23-center">
+          <a href="https://www.snapchat.com/add/alexmaclean23" target="_blank">
+            <div class="am23-quarter am23-hover-white am23-hover-shadow">
+              <img src="images/snapchat.png" alt="snapchat" style="width: 75%; margin-top: 7%">
+              <h3>Snapchat</h3>
+              <p class="am23-padding-small">Add me on Snapchat for easy, casual conversation!</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/alexmaclean23/" target="_blank">
+            <div class="am23-quarter am23-hover-white am23-hover-shadow">
+              <img src="images/instagram.png" alt="instagram" style="width: 75%; margin-top: 7%">
+              <h3>Instagram</h3>
+              <p class="am23-padding-small">Follow me on Instagram for updates on my life!</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alexmaclean23/" target="_blank">
+            <div class="am23-quarter am23-hover-white am23-hover-shadow">
+              <img src="images/linkedin.png" alt="linkedin" style="width: 75%; margin-top: 7%">
+              <h3>LinkedIn</h3>
+              <p class="am23-padding-small">Check out my LinkedIn page for a more "professional" bio!</p>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/alexmaclean23" target="_blank">
+            <div class="am23-quarter am23-hover-white am23-hover-shadow">
+              <img src="images/facebook.png" alt="facebook" style="width: 75%; border-radius: 20%; margin-top: 7%">
+              <h3>Facebook</h3>
+              <p class="am23-padding-small">View my (pathetically barebones) Facebook page!</p>
+            </div>
+          </a>
+        </div>
+        <div class="am23-row-padding am23-padding-16 am23-center" style="width: 100%">
+            <a href="mailto:alexmaclean23" style="text-decoration: none">
+            <div class="am23-hover-white am23-hover-shadow am23-center am23-content" style="width: 50%; padding-bottom: 1%">
+              <img src="images/gmail.png" alt="gmail" style="width: 60%; margin-top: 7%">
+              <h3>Email</h3>
+              <p class="am23-padding-small">For general communication purposes, email is the easiest way to reach me! Personal or professional, I check my email 
+                multiple times per day and will get back to you promptly. Please don't hesitate to leave a message or ask a question!
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="am23-center am23-gray am23-padding-64">
+      <a href="#home" class="am23-button am23-light-grey am23-large am23-wide"><i class="fa fa-arrow-up am23-margin-right"></i>BACK TO TOP</a>
+    </footer>
+    
+    <script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "am23-bar" + " am23-card" + " am23-animate-top" + " am23-white";
+        } else {
+            navbar.className = navbar.className.replace(" am23-card am23-animate-top am23-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("am23-show") == -1) {
+            x.className += " am23-show";
+        } else {
+            x.className = x.className.replace(" am23-show", "");
+        }
+    }
+    </script>
+
+  </body>
+</html>
