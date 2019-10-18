@@ -6,31 +6,45 @@
 <html>
   <title>Alex Maclean</title>
   <meta charset="UTF-8">
+  <!-- Meta data for site -->
   <meta name="description" content="Alex Maclean - Personal Website">
   <meta name="keywords" content="Alex, Maclean, Alex Maclean, 23, alexmaclean23, CV, resume, personal, portfolio, custom">
   <meta name="author" content="Alex Maclean">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon for browser tab -->
   <link rel="shortcut icon" type="image/png" href="">
+  <!-- Style sheet links and imports -->
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    body,h1,h2,h3,h4,h5,h6 {
+
+    /* Change font for all test types */
+    body,h1,h2,h3,h4,h5,h6,p {
       font-family: "Lato", sans-serif;
     }
 
+    /* Add smooth scrolling effect */
     html {
       scroll-behavior: smooth;
     }
 
+    /* Add background color and height */
     body, html {
       height: 100%;
       color: #777;
       line-height: 1.8;
     }
 
-    .am23-wide {letter-spacing: 10px;}
-    .am23-hover-opacity {cursor: pointer;}
+    /* Add letter spacing for title texts */
+    .am23-wide {
+      letter-spacing: 10px;
+    }
+
+    /* Reduce opacity on mouse hover */
+    .am23-hover-opacity {
+      cursor: pointer;
+    }
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1600px) {
@@ -40,13 +54,15 @@
       }
     }
 
+    /* Set site to occupy 100% width */
     .am23-wrapper {
       min-width: 100%;
     }
+
   </style>
   <body>
 
-    <!-- Navbar (sit on top) -->
+    <!-- Navbar on top of screen -->
     <div class="am23-top">
       <div class="am23-bar" id="myNavbar">
         <a class="am23-bar-item am23-button am23-hover-black am23-hide-medium am23-hide-large am23-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -58,7 +74,7 @@
         <a href="#contact" class="am23-bar-item am23-button am23-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
       </div>
 
-      <!-- Navbar on small screens -->
+      <!-- Hidden navbar on small screens -->
       <div id="navDemo" class="am23-bar-block am23-white am23-hide am23-hide-large am23-hide-medium">
         <a href="#about" class="am23-bar-item am23-button" onclick="toggleFunction()">ABOUT</a>
         <a href="#workexperience" class="am23-bar-item am23-button" onclick="toggleFunction()">WORK EXPERIENCE</a>
@@ -66,20 +82,23 @@
       </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
+    <!-- Header with title text -->
     <div class="am23-display-container am23-opacity-min" id="home" style="min-height: 100%">
       <div class="am23-display-middle" style="white-space:nowrap;">
+        <!-- Name -->
         <h1 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">ALEX MACLEAN</h1>
         <hr>
+        <!-- Identifiers -->
         <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">SOFTWARE ENGINEERING</p>
         <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">WEB DEVELOPMENT</p>
         <p class="am23-padding-small am23-small am23-wide am23-animate-opacity am23-center">CYBERSECURITY</p>
       </div>
     </div>
 
-    <!-- Container (About Section) -->
+    <!-- About section with personal description -->
     <div class="am23-wrapper" style="background-color: #f1f1f1">
       <div class="am23-content am23-container am23-padding-64" id="about">
+        <!-- Text (omnipresent) -->
         <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">ABOUT ME</h3>
         <p>Welcome! My name is Alex Maclean, and I am a young computer science enthusiast who enjoys software engineering, web development, and offensive security.
           As a college student, I am still broadening my horizons within the world of computer science, and hope to find my calling at a tech company where I can
@@ -88,11 +107,11 @@
           time (as well as up-keeping this site!).
         </p>
         <div class="am23-row">
+          <!-- Image -->
           <div class="am23-col m6 am23-center am23-padding-large">
             <a href="#contact"><img src="images/portrait.jpg" class="am23-round am23-hover-shadow am23-grayscale am23-image am23-hover-opacity am23-card-4" alt="Photo of Me" width="auto" height="50%" style="margin-top: 5%"></a>
           </div>
-
-          <!-- Hide this text on small devices -->
+          <!-- Text (hidden on small screens) -->
           <div class="am23-col m6 am23-hide-small am23-padding-large">
             <p>Thanks for visiting my site. If you would like to reach out to me, for personal or professional purposes, pleace make your way to the bottom the page 
               for a list of my social media profiles and contact information. I'll get back to you as soon as I can! Otherwise, feel free to check out the rest of my 
@@ -101,6 +120,8 @@
             </p>
           </div>
         </div>
+
+        <!-- Bar graph with inserted text -->
         <p class="am23-large am23-center am23-padding-16">What my mom tells me I'm good at:</p>
         <p class="am23-wide"><i class="fa fa-laptop"></i>Web Development</p>
         <div class="am23-light-grey">
@@ -117,6 +138,7 @@
       </div>
     </div>
 
+    <!-- Banner section with statistics -->
     <div class="am23-row am23-center am23-dark-grey am23-padding-16">
       <div class="am23-quarter am23-section">
         <span class="am23-xlarge">4+</span><br>
@@ -136,10 +158,11 @@
       </div>
     </div>
 
-    <!-- Container (Work Experience Section) -->
+    <!-- Work experience section with job descriptions -->
     <div class="am23-content am23-container am23-padding-64" id="workexperience">
       <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">WORK EXPERIENCE</h3><br>
       <div class="am23-row-padding am23-center">
+        <!-- WYSA card -->
         <div class="am23-third">
           <div class="am23-card am23-container">
           <h3>WYSA</h3>
@@ -152,6 +175,7 @@
             <h6 style="padding-bottom: 5%">Walpole, MA<br>SEPTEMBER 2014 - PRESENT</h6>
           </div>
         </div>
+        <!-- MITRE card -->
         <div class="am23-third">
           <div class="am23-card am23-container">
           <h3>MITRE</h3>
@@ -164,6 +188,7 @@
             <h6 style="padding-bottom: 5%">Bedford, MA<br>JUNE 2019 - PRESENT</h6>
           </div>
         </div>
+        <!-- WVGC card -->
         <div class="am23-third">
           <div class="am23-card am23-container">
           <h3>WVGC</h3>
@@ -180,11 +205,12 @@
       </div>
     </div>
 
-    <!-- Container (Contact Section) -->
+    <!-- Contact section with social media links) -->
     <div class="am23-wrapper" style="background-color: #f1f1f1">
       <div class="am23-content am23-container am23-padding-64" id="contact">
         <h3 class="am23-center am23-padding-large am23-xlarge am23-wide am23-animate-opacity">CONTACT ME</h3>
         <div class="am23-row-padding am23-padding-16 am23-center">
+          <!-- Snapchat card -->
           <a href="https://www.snapchat.com/add/alexmaclean23" target="_blank">
             <div class="am23-quarter am23-hover-white am23-hover-shadow">
               <img src="images/snapchat.png" alt="snapchat" style="width: 75%; margin-top: 7%">
@@ -192,6 +218,7 @@
               <p class="am23-padding-small">Add me on Snapchat for easy, casual conversation!</p>
             </div>
           </a>
+          <!-- Instagram card -->
           <a href="https://www.instagram.com/alexmaclean23/" target="_blank">
             <div class="am23-quarter am23-hover-white am23-hover-shadow">
               <img src="images/instagram.png" alt="instagram" style="width: 75%; margin-top: 7%">
@@ -199,6 +226,7 @@
               <p class="am23-padding-small">Follow me on Instagram for updates on my life!</p>
             </div>
           </a>
+          <!-- LinkedIn card -->
           <a href="https://www.linkedin.com/in/alexmaclean23/" target="_blank">
             <div class="am23-quarter am23-hover-white am23-hover-shadow">
               <img src="images/linkedin.png" alt="linkedin" style="width: 75%; margin-top: 7%">
@@ -206,6 +234,7 @@
               <p class="am23-padding-small">Check out my LinkedIn page for a more "professional" bio!</p>
             </div>
           </a>
+          <!-- Facebook card -->
           <a href="https://www.facebook.com/alexmaclean23" target="_blank">
             <div class="am23-quarter am23-hover-white am23-hover-shadow">
               <img src="images/facebook.png" alt="facebook" style="width: 75%; border-radius: 20%; margin-top: 7%">
@@ -214,6 +243,7 @@
             </div>
           </a>
         </div>
+        <!-- Gmail card -->
         <div class="am23-row-padding am23-padding-16 am23-center" style="width: 100%">
             <a href="mailto:alexmaclean23" style="text-decoration: none">
             <div class="am23-hover-white am23-hover-shadow am23-center am23-content" style="width: 50%; padding-bottom: 1%">
@@ -228,13 +258,13 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer with return button -->
     <footer class="am23-center am23-gray am23-padding-64">
       <a href="#home" class="am23-button am23-light-grey am23-large am23-wide"><i class="fa fa-arrow-up am23-margin-right"></i>BACK TO TOP</a>
     </footer>
     
     <script>
-    // Change style of navbar on scroll
+    // Change style of navbar on scroll //
     window.onscroll = function() {myFunction()};
     function myFunction() {
         var navbar = document.getElementById("myNavbar");
@@ -245,7 +275,7 @@
         }
     }
 
-    // Used to toggle the menu on small screens when clicking on the menu button
+    // Used to toggle the menu on small screens when clicking on the menu button //
     function toggleFunction() {
         var x = document.getElementById("navDemo");
         if (x.className.indexOf("am23-show") == -1) {
